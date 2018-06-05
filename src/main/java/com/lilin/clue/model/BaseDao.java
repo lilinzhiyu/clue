@@ -1,7 +1,9 @@
 package com.lilin.clue.model;
 
-import java.util.Date;
+import lombok.Data;
 
+import java.util.Date;
+@Data
 public class BaseDao {
     /**
      * 实体创建时间
