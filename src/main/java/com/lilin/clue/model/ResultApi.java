@@ -8,8 +8,8 @@ import lombok.*;
 @Data
 @EqualsAndHashCode
 @Builder
-public class ResultApi {
+public class ResultApi<T> {
     private Boolean isSuccess;
-    private String result;
-    private ErrorEnum errorMessage = null;
+    private T result;
+    private ErrorEnum errorMessage;
 }
